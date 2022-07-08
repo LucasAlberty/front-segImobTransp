@@ -1,0 +1,73 @@
+.app--container{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #3185FC;
+    overflow: hidden;
+  }
+  
+  .register--container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 30px;
+    border-radius: 20px;
+    margin-top: 50px;
+    background-color: #fff;
+  }
+  
+  .register--title {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    color: #3185FC;
+  }
+  
+  .register--routes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  .register--input {
+    display: block;
+    width: 80%;
+    height: 20px;
+    padding: 9px 4px;
+    margin: 6px auto;
+    border: 0;
+    outline: none;
+    border-bottom: 1px solid black;
+  }
+  
+  .register--button {
+    padding: 8px 8px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #3185FC;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 5px;
+  }
+  
+  .select--typetransp{
+    width: 80%;
+    border: 0;
+    outline: none;
+    margin: 5px;
+  }
+  
+  .register--button:hover {
+    background-color: #022B64;
+  }
+  
+  .register--totalPrice{
+    margin: 5px;
+    font-family: sans-serif;
+  }

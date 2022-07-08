@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import { OrderList } from "./components/OrderList";
+import Register from "./components/Register/index.js";
 
 function App() {
+  const [currentModule, setCurrentModule] = useState("OrderList");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div>
+      <nav className="nav--bar">
+        <button
+          className="nav--button"
+          onClick={() => setCurrentModule("OrderList")}
         >
-          Learn React
-        </a>
-      </header>
+          Lançamentos
+        </button>
+        <button
+          className="nav--button"
+          onClick={() => setCurrentModule("Register")}
+        >
+          Novo Registro
+        </button>
+      </nav>
+
+      {currentModule === "OrderList" ? <OrderList /> : <Register />}
     </div>
   );
 }
