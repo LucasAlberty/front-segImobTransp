@@ -1,0 +1,17 @@
+Script de criação da tabela que será usada na aplicação.
+
+
+CREATE TABLE `orders` (
+  `COD_ORDER` int NOT NULL AUTO_INCREMENT,
+  `ORIGIN` varchar(45) NOT NULL,
+  `DESTINY` varchar(45) NOT NULL,
+  `HEIGHT` float NOT NULL,
+  `WIDTH` float NOT NULL,
+  `LENGTH` float NOT NULL,
+  `TYPETRANSP` varchar(45) NOT NULL,
+  `RESPONSIBLE` varchar(45) NOT NULL,
+  `DATEOUT` datetime NOT NULL,
+  `TOTALPRICE` float NOT NULL,
+  `STATUS` varchar(45) NOT NULL DEFAULT 'A',
+  PRIMARY KEY (`COD_ORDER`)
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

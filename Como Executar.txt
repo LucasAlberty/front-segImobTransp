@@ -1,0 +1,68 @@
+SegImobTransp é uma aplicação simples que faz registro de novos serviços, apresenta serviços registrados que podem ser alterados e deletados.
+
+Linguagens utilizadas: ReactJs(Front), NodeJs(Back) e MySql(Banco de Dados). 
+
+_________________________________________________________________________________
+
+Passo a Passo para executar o projeto.
+
+Tenha o node instalado na sua maquina. (https://nodejs.org/en/download/)
+
+MySql Workbench também devera ser instalado na sua máquina. (https://www.mysql.com/downloads/)
+
+Em seguida clonaremos os repositórios.
+
+Crie uma pasta em um local de sua preferência.
+
+Dentro desta pasta crie mais duas, sendo elas client e server.
+
+Primeiro clonaremos o repositório do front.
+
+Entre na pasta client e clone o repositório do front (git clone https://github.com/LucasAlberty/front-segImobTransp)
+
+Depois entre na pasta server e clone o repositório do back (git clone https://github.com/LucasAlberty/back-segImobTransp)
+
+__________________________________________________________________________________
+
+Agora que temos os dois repositórios clonados, vamos fazer uma breve configuração para instalar as dependências de cada repositório.
+
+Primeiro entre na pasta client e execute o comando "npm install".
+
+Em seguida entre na pasta server e execute o mesmo comando "npm install".
+
+Pronto, todas dependências instaladas.
+
+Você precisa criar um banco mysql para a aplicação rodar perfeitamente.
+
+Crie um banco com o seguinte nome 'segimob'.
+
+Depois de criado, crie uma tabela seguindo o script que você pode encontrar na pasta client nomeado como "ScriptTable.txt". 
+
+Logo em seguida vamos configurar a conexão do back com o banco de dados.
+
+Entre no arquivo "index.js" na pasta server. Lá você devera colocar informações de acesso ao seu banco.
+
+Na linha 9 do arquivo, coloque o nome do usuário de acesso do banco.
+Na linha 10 informe a senha de acesso do banco.
+
+
+Enfim podemos executar a aplicação.
+
+Primeiro entre na pasta server e execute o comando "npm run dev". Espere ate que a mensagem 'rodando servidor' seja apresentada.
+
+Em seguida entre na pasta client e execute o comando "npm start". Com isso ira abri a aplicação no navegador.
+
+E prontinho, com isso a aplicação devera rodar sem problemas.
+ 
+
+
+
+
+
+
+
+
+
+
+
+
